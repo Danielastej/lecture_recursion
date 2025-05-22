@@ -8,8 +8,8 @@ def flood_fill(img, x, y):
     img[x, y] = 2
     plt.imshow(img, cmap="gray")
     plt.show(block=False)
-    plt.pause(0.1)
-    plt.clf()
+    plt.pause(0.01)
+    plt.draw()
     img = flood_fill(img,x+1, y)
     img = flood_fill(img, x, y + 1)
     img = flood_fill(img, x - 1, y)
